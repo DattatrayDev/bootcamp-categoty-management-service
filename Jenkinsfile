@@ -7,7 +7,7 @@ pipeline {
                       sh 'sudo docker build -t dattatrayd/category-management-jenkins:latest .'
             }
         }
-        stage('Test') {
+        stage('Test Process') {
             steps {
            withCredentials([string(credentialsId: 'dockerHubPassword', variable: 'dockerHubPassword')]) 
          {
