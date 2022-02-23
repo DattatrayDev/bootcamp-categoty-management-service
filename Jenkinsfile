@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build process') {
             steps {
                       sh 'sudo docker build -t dattatrayd/category-management-jenkins:latest .'
             }
